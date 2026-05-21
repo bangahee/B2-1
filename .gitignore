@@ -1,0 +1,12 @@
+# Mac system files
+.DS_Store
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local data / user files
+data/*.jsonl
+*.csv
