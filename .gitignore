@@ -1,12 +1,33 @@
-# Mac system files
-.DS_Store
-
-# Python caching
+# Python이 실행 중 자동으로 생성하는 캐시 폴더를 Git에서 제외합니다.
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
 
-# Local data / user files
-data/*.jsonl
-*.csv
+# 컴파일된 Python 파일(.pyc, .pyo, .pyd 등)을 Git에서 제외합니다.
+*.py[cod]
+
+
+# 실제 프로그램 실행 중 생성되는 기본 데이터 폴더를 Git에서 제외합니다.
+data/
+
+# 기능 테스트 중 생성되는 테스트용 데이터 폴더를 Git에서 제외합니다.
+test_data/
+
+
+# update/delete 과정에서 잠시 생성될 수 있는 임시 파일을 Git에서 제외합니다.
+*.tmp
+
+
+# 테스트 중 생성한 CSV 내보내기 결과 파일을 Git에서 제외합니다.
+tests/export_*.csv
+
+# 잘못된 CSV 헤더 검증용으로 잠시 생성하는 테스트 파일을 Git에서 제외합니다.
+tests/bad_header.csv
+
+
+# Visual Studio Code의 개인 작업 환경 설정 폴더를 Git에서 제외합니다.
+.vscode/
+
+# PyCharm, IntelliJ 등 JetBrains IDE의 개인 설정 폴더를 Git에서 제외합니다.
+.idea/
+
+# macOS에서 자동으로 생성되는 폴더 메타데이터 파일을 Git에서 제외합니다.
+.DS_Store

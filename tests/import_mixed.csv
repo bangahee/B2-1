@@ -1,0 +1,8 @@
+date,type,category,amount,memo,tags
+2026-07-20,expense,food,12000,coffee,drink
+2026-07-21,expense,transport,2500,bus,commute
+2026-13-40,expense,food,10000,bad date,error
+2026-07-22,wrong,food,5000,bad type,error
+2026-07-23,expense,unknown,6000,bad category,error
+2026-07-24,expense,food,-100,bad amount,error
+2026-07-25,income,salary,100000,part time,work
